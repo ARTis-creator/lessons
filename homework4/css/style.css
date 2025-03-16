@@ -1,0 +1,305 @@
+  @font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    max-width: 1440px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  /*header*/
+  .header {
+    padding: 15.5px 188px 0 188px;
+    height: 56px;
+  }
+   
+  .menu__link {
+    color: rgba(28, 27, 27, 1);
+    font: 700 16px/1 "Roboto", sans-serif;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    min-height: 56px;
+  }
+
+  .header__logo-img {
+    max-width: 80px;
+    max-height: 24px;
+  }
+
+  .menu__list {
+    display: flex;
+    gap: 28px;
+  }
+  
+  .menu__picture {
+    display: flex; 
+    justify-content: flex-end;
+    align-content: center;
+    gap: 25.88px;
+  }
+
+  /*main*/
+  /*first section*/
+ .humanity {
+    background-color: rgba(240, 239, 235, 1);
+    height: 554px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .humanity__titles {
+    padding: 90px 73px 90px 84px;
+  }
+
+  .humanity__title {
+    font: 700 60px/1 "Roboto", sans-serif;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  .humanity__subtitle {
+    font: 400 24px/1 "Roboto", sans-serif;
+    color: rgba(0, 0, 0, 1);
+    padding-top: 42px;
+  }
+
+  .humanity__link__border {
+    margin-top: 26px;
+    background:rgba(0, 0, 0, 1);
+    height: 36px;
+    width: 129px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .humanity__link {
+    color: #fff;
+    font: 400 17px/1 "Roboto", sans-serif;
+  }
+
+  .humanity__img {
+    max-height: 521px;
+    max-width: 599px;
+    padding: 9px 60px 24.19px 0;
+  }
+  /*домашка*/
+  .features {
+    padding-bottom: 110px;
+  }
+
+  .feature__title {
+    padding-top: 189.67px;
+    display: flex;
+    justify-content: center;
+    font: 400 36px/1 "Roboto", sans-serif;
+  }
+
+  .features__circles {
+    min-width: 1088px;
+    min-height: 555px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 69.33px 188px 52px 164px;
+  }
+
+  .features__circle__signature {
+    height: 167.5px;
+    width: 338.66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .features__circle {
+    width: 70px;
+	height: 70px;
+    -moz-border-radius: 35px;
+	-webkit-border-radius: 35px;
+	border-radius: 35px;
+  }
+
+/* цвета кругов*/
+  .turquoise {
+	background: rgba(33, 247, 236, 1);
+  }
+
+  .green {
+	background: rgba(51, 211, 188, 1);
+  }
+
+  .blue {
+	background: rgba(24, 165, 198, 1);
+  }
+
+  .brown {
+	background: rgba(211, 143, 98, 1);
+  }
+
+  .red {
+	background: rgba(249, 76, 67, 1);
+  }
+
+  .purple {
+	background: rgba(211, 153, 255, 1);
+  }
+  .features__signature {
+    padding-top: 26px;
+    font: 700 30px/1 "Roboto", sans-serif;
+  }
+
+  /*2й блок домашки*/
+  .interview__title {
+    font: 700 36px/1 "Roboto", sans-serif;
+    text-align: center;
+  }
+
+  .interview__img {
+    max-height: 351px;
+    max-width: 288px;
+  }
+
+  .interview {
+    width: 100%;
+    min-height: 854.67px;
+    background: linear-gradient(to top, rgba(240, 240, 240, 1) 56%, #fff 44%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 52px;
+  }
+  
+  .interview__figures {
+    max-width: 1164px;
+    max-height: 616.5px;
+    display: flex;
+    flex-direction: row;
+    margin:102.33px 188px 51.17px 88px;
+    justify-content: space-around;
+  }
+  
+  .interview__images {
+    max-width: 287.98px;
+    max-height: 616.5px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    column-gap: 100px;
+  }
+
+  .interview__figcaption {
+    min-height: 157.5px;
+    min-width:  287.98px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .interview__figcaption__quote {
+    font: 700 22px/1 "Roboto", sans-serif;
+    margin-top: 35px;
+    text-align: center;
+  }
+
+  .interview__figcaption__text {
+    font: 400 20px/1 "Roboto", sans-serif;
+    margin-top: 34px;
+    text-align: center;
+  }
+  .interview__link {
+    font: 700 18px/1 "Roboto", sans-serif;
+    text-decoration: underline;
+    display: flex;
+    margin-top: 44px;
+    align-self: center;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  /*inbox section*/
+.inbox {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    margin-top: 78.83px;
+}
+.inbox__content {
+    max-width: 570px;
+    max-height: 262px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inbox__tittle {
+    text-align: center;
+    font: 700 36px/1 "Roboto", sans-serif;
+}
+
+.inbox__subtitle {
+    text-align: center;
+    font: 700 17px/1 "Roboto", sans-serif;
+    margin-top: 9px;
+    
+}
+.inbox__inputs {
+    width: 366px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-self: center;
+    padding-top: 25.5px;
+    padding-bottom: 88px;
+}
+
+.inbox__input {
+width: 153px;
+height: 39px;
+border: 1px solid #000;
+}
+.email {
+    width: 366px;
+    margin-top: 18px;
+}
+
+.inbox__btn {
+    margin: 18px 125px 0 126px;
+    background:rgba(0, 0, 0, 1);
+    height: 33px;
+    width: 115px;
+    border-radius: 15px;
+    color: #fff;
+    font: 400 14px/1 "Roboto", sans-serif;
+}
