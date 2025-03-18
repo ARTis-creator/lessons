@@ -1,0 +1,217 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-bold";
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+
+  /*1 section*/
+  .main {
+    max-width: 1920px;
+  }
+  
+  .main__rectanglar-up {
+    position: absolute;
+    z-index: -1;
+    top: 151.4px;
+    left: 1267.33px;
+  }
+
+  .main__rectanglar-midle {
+    position: absolute;
+    z-index: -1;
+    top: 491.12px;
+    left: 99.65pxpx;
+  }
+
+  .benifit__rectanglar-down {
+    position: absolute;
+    z-index: -1;
+    top: 970.4px;
+    left: 1239.33px;
+  }
+
+  .ideas {
+    padding: 0 19px 0 22px;
+    min-width: 1309px;
+    min-height: 569px;
+  }
+
+  .ideas__container {
+    display: flex;
+    column-gap: 20.14px;
+  }
+
+  .ideas__title {
+    font: 600 24px/1 "Montserrat-bold", sans-serif;
+    margin-top: 47px;
+    margin-left: 22px;
+  }
+
+  .ideas__container__items {
+    min-width: 312.15px;
+    min-height: 420px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+  }
+
+  .ideas__container__items:hover {
+    box-shadow: 5px 6px 5px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  .container__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container__item-date {
+    display: flex;
+    align-self: flex-end;
+    color: rgba(190, 23, 54, 1);
+    font: 600 12px/1 "Montserrat", sans-serif;
+    margin-top: 27.7px;
+    margin-right: 30.21px;
+  }
+
+  .container__item-image {
+    min-width: 125.9px;
+    min-height: 29.45px;
+    margin: 20px 100.3px 30px 85.94px;
+  }
+
+  .iphone-img {
+    margin-bottom: 23.97px;
+    margin-top: 12.63px;
+  }
+
+  .container__item-title {
+    font: 600 16px/1 "Montserrat-bold", sans-serif;
+    text-align: center;
+    margin: 0px 100.3px 30px 85.94px;
+    width: 160px;
+  }
+
+  .container__item__list {
+    margin: 0 7.21px 30px 7.21px;
+  }
+
+  .container__list-el {
+    font: 400 14px/1 "Montserrat", sans-serif;
+    margin-bottom: 8px;
+  }
+
+  b {
+    font: 400 14px/1 "Montserrat-bold", sans-serif;
+  }
+  .potential {
+    color: #1455D8;
+  }
+
+  .container__item-link {
+    width: 261.8px;
+    height: 50px;
+    font: 400 14px/1 "Montserrat", sans-serif;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 22.02px;
+
+    
+  }
+  
+  .container__item-link:hover {
+    border: 2px solid #575756;
+  }
+
+  .ideas__link {
+    border: 2px solid #575756;
+    width: 261.8px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left:  545.6px;
+    font: 400 14px/1 "Montserrat", sans-serif;
+    color: #000000;
+  }
+
+  .ideas__link:hover {
+    box-shadow: 3px 5px 3px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  /*2 section*/
+  .benefits {
+  padding: 100px 19px 15px 22px;
+  display: flex;
+  column-gap: 91.63px;
+  }
+
+  .benefits__img {
+    width: 644.43px;
+    height: 418px;
+    filter: drop-shadow(0 0 3px rgba(100,0,0,0.5));
+    margin-top: 66px;
+  }
+
+  .benefits__content {
+    width: 572.94px;
+    height: 464px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .benefits__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .benefits__conten-title {
+    font: 600 24px/1 "Montserrat-bold", sans-serif;
+  }
+  
+  .benifits__list-item__title {
+    font: 600 18px/1 "Montserrat-bold", sans-serif;
+      margin-bottom: 10px;
+  }
+
+  .benifits__list-item__subtitle {
+    font: 400 14px/1.4 "Montserrat", sans-serif;
+  }
+
+ 
