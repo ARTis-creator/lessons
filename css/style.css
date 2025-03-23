@@ -1,0 +1,159 @@
+  @font-face {
+    font-family: "open_sans";
+    src: url("../fonts/OpenSans_Condensed-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "open_sans_medium";
+    src: url("../fonts/OpenSans_Condensed-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .leadership{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F1F8FC;
+  }
+
+  .leadership__title {
+   font: 600 40px/1.4 "open_sans_medium", sans-serif;
+   color: #333333;
+   margin-bottom: 30px;
+   margin-top: 100px;
+   text-align: center;
+   width: 805px;
+  }
+  
+  .leadership__line {
+    border-bottom: 4px solid #2B9AD6;
+    width: 100px;
+  }
+
+  .leadership__images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 183.5px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+
+  .leadership__img {
+    width: 220px;
+    position: relative;
+    left: 36px;
+    top: 13px;
+  }
+
+  .leadership__figure__conent-title {
+    margin-top: 20px;
+    font: 700 24px/1.4 "open_sans_medium", sans-serif;
+    color: #194F94;
+    margin-left: 27px;
+  }
+
+  .leadership__figure__conent-subtitle {
+    font: 400 17px/1.5 "open_sans", sans-serif;
+    color: #5F5F5F;
+    width: 205px;
+    margin-left: 27px;
+  }
+
+  .leadership__figure {
+    position: relative;
+    height: 361px;
+    width: 293px;
+    
+  }
+
+
+  .leadership__figure::before {
+    width: 50px;
+	height: 50px;
+	background: #194F94;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 179px;
+    left: 189px;
+    content: url(../img/in.svg);
+    z-index: 2;
+  }
+
+  .leadership__figure:hover {
+
+    &:nth-child(1){
+        background: url(../img/rodion-big.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    &:nth-child(2){
+        background: url(../img/sergey-big.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    &:nth-child(3){
+        background: url(../img/maria-big.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    &:nth-child(4){
+        background: url(../img/eugene-big.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    &:nth-child(5){
+        background: url(../img/fred-big.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .leadership__figure__conent-title {
+        color: #fff;
+        padding-top: 22px;
+        margin-left: 27px;
+    }
+    .leadership__figure__conent-subtitle {
+        color: #fff;
+        margin-left: 27px;
+    }
+
+    .leadership__figure__circle {
+    width: 50px;
+    height: 50px;
+    background: #FF5E00;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 179px;
+    left: 189px;
+    z-index: 30;
+      }
+  } 
+  
