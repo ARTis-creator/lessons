@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Заявка на работу</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <section class="zoo">
+    <h2 class="zoo__title">Форма заявки на работу в зоопарке</h2>
+    <p class="zoo__subtitle">Пожалуйста, заполните форму. Обязательные поля помечены<span>*</span></p>
+    <form>
+      <fieldset class="zoo__fieldset zoo__fieldset-contact" >
+        <legend class="zoo__legend">Контактная информация</legend>
+        <div class="contact__form">
+          <input id="name" class="contact__input"  type="text" placeholder=" " required>
+          <label for="name" class="contact__label">Имя<span>*</span></label>
+        </div>
+        <div class="contact__form">
+          <input id="tel" class="contact__input" type="tel" placeholder=" ">
+          <label for="tel" class="contact__label">Телефон</label>
+        </div>
+        <div class="contact__form">
+          <input id="email" class="contact__input" type="email"  placeholder=" " required>
+          <label for="email" class="contact__label">Email<span>*</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="zoo__fieldset zoo__fieldset-personal">
+        <legend class="zoo__legend">Персональная информация</legend>
+          <label for="age" class="personal__label">Возраст<span>*</span></label>
+          <input id="age" type="number" max="130" required>
+          <label for="sex" class="personal__label">Пол</label>
+          <select id="sex">
+            <optgroup class="personal__group" label="Пол">
+              <option value="Мужчина">Мужчина</option>
+              <option value="Женщина">Женщина</option>
+              <option value="То ли рак, то ли рыба">То ли рак, то ли рыба</option>
+            </optgroup>  
+          </select>
+        <label for="textarea" class="personal__label">Перечислите личные качества</label>
+        <textarea id="textarea" cols="30" rows="20"></textarea>
+      </fieldset>
+
+      <fieldset class="zoo__fieldset zoo__fieldset-animal ">
+        <legend class="zoo__legend">Выберите ваших любимых животных</legend>
+          <ul class="animal__list">
+            <li>
+              <input id="zebra" type="checkbox">
+              <label for="zebra">Зебра</label>
+            </li>
+            <li>
+              <input id="cat" type="checkbox">
+              <label for="cat">Кошак</label>
+            </li>
+            <li>
+              <input id="anacond" type="checkbox">
+              <label for="anacond">Анаконда</label>
+            </li>
+            <li>
+              <input id="human" type="checkbox" checked>
+              <label for="human">Человек</label>
+            </li>
+            <li>
+              <input id="elephant" type="checkbox">
+              <label for="elephant">Слон</label>
+            </li>
+            <li>
+              <input id="antelope" type="checkbox">
+              <label for="antelope">Антилопа</label>
+            </li>
+            <li>
+              <input id="pigeon" type="checkbox">
+              <label for="pigeon">Голубь</label>
+            </li>
+            <li>
+              <input id="crab" type="checkbox">
+              <label for="crab">Краб</label>
+            </li>
+          </ul>
+      </fieldset>
+      <input class="zoo__submit" type="submit" value="Отправить информацию">
+    </form>
+  </section>
+</body>
+</html>

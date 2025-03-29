@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "tecrtur";
+  src: url("../fonts/Tektur_Condensed-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "tecrtur";
+  src: url("../fonts/Tektur_Condensed-Black.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "tecrtur";
+  src: url("../fonts/Tektur_Condensed-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: #CCC482;
+  max-width: 1400px;
+}
+
+span {
+  color: #9A914F;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.zoo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
+
+.zoo__fieldset {
+  margin: 0 15% 6%;
+  width: 70%;
+  min-width: 300px;
+  border: 4px solid #645B1A;
+  border-radius: 8%;
+}
+
+.zoo__legend{
+  text-align: center;
+  font: 500 27px/1 "tecrtur", sans-serif !important;
+  color: #735849	;
+  min-width: 150px;
+  text-shadow: 6px 12px 7px rgba(0,0,0,0.2);
+}
+
+.zoo__title, .zoo__subtitle {
+  color: #735849	;
+  text-align: center;
+  text-shadow: 6px 12px 7px rgba(0,0,0,0.2);
+}
+
+.zoo__title {
+  font: 700 40px/1 "tecrtur", sans-serif;
+}
+
+.zoo__subtitle {
+  font: 500 30px/1 "tecrtur", sans-serif;
+  padding-bottom: 50px;
+}
+
+.contact__form {
+  position: relative;
+  margin-bottom: 20px;
+  margin: 40px;
+}
+
+.contact__input{
+  border-radius: 5px;
+  border: 3px solid #645B1A;
+  background: #b4c0de;
+  padding: 15px;
+  width: 100%;
+  min-width: 200px;
+  font: 400 30px/1 "tecrtur", sans-serif;
+  color: #735849	;
+ 
+  &:focus {
+    border: 3px solid #132143;
+    outline: none;
+  }
+}
+
+.contact__label {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 15px;
+  color: #735849;
+  font: 400 22px/1 "tecrtur", sans-serif;
+  padding: 0 3px;
+  transition: 0.4s;
+}
+
+.contact__input:focus ~ .contact__label,
+.contact__input:not(:placeholder-shown).contact__input:not(:focus) ~ .contact__label {
+  top: -1.6px;
+  font-size: 24px;
+  left: 12px;
+  background: #CCC482;
+}
+
+.zoo__fieldset-personal{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  color: #735849;
+  font: 400 22px/1 "tecrtur", sans-serif;
+  width: 40%;
+}
+
+#age, #sex {
+  width: 170px;
+  font: 400 22px/1 "tecrtur", sans-serif;
+  margin-bottom: 20px;
+  background: #b4c0de;
+  color: #735849;
+}
+
+#textarea {
+  min-width: 200px;
+  background: #b4c0de;
+  color: #735849;
+}
+
+.zoo__fieldset-animal {
+  accent-color: #64341A;
+  padding: 30px;
+  font: 400 22px/1 "tecrtur", sans-serif;
+}
+
+.animal__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.animal__list > li {
+  border: 3px solid #645B1A;
+  min-width: 200px;
+  color: #735849	;
+  text-align: center;
+  background: #b4c0de;
+}
+
+.zoo__submit {
+  border: 3px solid #645B1A;
+  border-radius: 15px;
+  font: 400 25px/1 "tecrtur", sans-serif;
+  box-shadow: 15px 15px 17px rgba(0,0,0,0.6);
+  width: 200px;
+  height: 50px;
+  left: calc(50% - 100px);
+  color: #735849;
+  background: none;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+
+
+
