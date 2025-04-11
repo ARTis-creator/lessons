@@ -27,20 +27,36 @@
   </section>
 
   <header class="header">
-    <nav class="header__menu">
+    <div class="header__wrapper">
       <div class="header__container">
         <h3 class="header__title">Правозащитник</h3>
         <p class="header__subtitle">Юридическая компания</p>
       </div>
-      <ul class="header__list">
-        <li class="header__list-item"><a href="#services">Услуги</a></li>
-        <li class="header__list-item"><a href="#about__company">О компании</a></li>
-        <li class="header__list-item"><a href="#jurist">Наши юристы</a></li>
-        <li class="header__list-item"><a href="#reviews">Отзывы</a></li>
-        <li class="header__list-item"><a href="#news">Новости</a></li>
-        <li class="header__list-item"><a href="#contacts">Контакты</a></li>
-      </ul>
-    </nav>
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__list-item"><a href="#services">Услуги</a></li>
+          <li class="header__list-item"><a href="#about__company">О компании</a></li>
+          <li class="header__list-item"><a href="#jurist">Наши юристы</a></li>
+          <li class="header__list-item"><a href="#reviews">Отзывы</a></li>
+          <li class="header__list-item"><a href="#news">Новости</a></li>
+          <li class="header__list-item"><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <nav class="header__menu-adaptive">
+        <button class="header__button" aria-expanded="false" aria-controls="list" >
+          
+        </button>
+        <a class="main-item" href="javascript:void(0);" tabindex="1" ><img src="./img/menu.png" alt="menu"></a> 
+        <ul class="sub-menu"> 
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#about__company">О компании</a></li>
+          <li><a href="#jurist">Наши юристы</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#news">Новости</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul> 
+      </nav>
+    </div>
   </header>
 
   <main class="content">
@@ -69,9 +85,11 @@
               <path d="M8.33333 17.3334L0 9.00008L8.33333 0.666748L9.8125 2.14591L2.95833 9.00008L9.8125 15.8542L8.33333 17.3334Z" fill="#E6E6E6"/>
             </svg>          
           </button>
-          <svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="1.07337" y1="29.9422" x2="15.1013" y2="1.18083" stroke="#E6E6E6" stroke-width="2"/>
-          </svg>  
+          <div class="preview__slash">
+            <svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="1.07337" y1="29.9422" x2="15.1013" y2="1.18083" stroke="#E6E6E6" stroke-width="2"/>
+            </svg>  
+          </div>
           <button>
             <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1.68766 17.3334L0.208496 15.8542L7.06266 9.00008L0.208496 2.14591L1.68766 0.666748L10.021 9.00008L1.68766 17.3334Z" fill="#E6E6E6"/>
@@ -168,7 +186,7 @@
           <a class="information__links-sertificat link" href="#">Сертификаты</a>
         </div>
       </div>
-      <img src="./img/books.jpg" alt="книги">
+      <img class="information__img" src="./img/books.jpg" alt="книги">
     </section>
 
     <section class="jurist" id="jurist">
@@ -243,9 +261,11 @@
               <path d="M8.33333 17.3334L0 9.00008L8.33333 0.666748L9.8125 2.14591L2.95833 9.00008L9.8125 15.8542L8.33333 17.3334Z" fill="#4F8FF0"/>
             </svg>          
           </button>
-          <svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="1.07337" y1="29.9422" x2="15.1013" y2="1.18083" stroke="#4F8FF0" stroke-width="2"/>
-          </svg>  
+          <div class="preview__slash">
+            <svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="1.07337" y1="29.9422" x2="15.1013" y2="1.18083" stroke="#4F8FF0" stroke-width="2"/>
+            </svg>  
+          </div>
           <button>
             <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1.68766 17.3334L0.208496 15.8542L7.06266 9.00008L0.208496 2.14591L1.68766 0.666748L10.021 9.00008L1.68766 17.3334Z" fill="#4F8FF0"/>
