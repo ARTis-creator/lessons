@@ -27,7 +27,7 @@ button {
 }
 
 body {
-  max-width: 1920px;
+  max-width: 100%;
 }
 
 .title {
@@ -48,10 +48,9 @@ body {
 }
 
 .line {
-  width: 50px;
-  height: 3px;
+  width: 2.604vw;
+  height: .156vw;
   background: #4F8FF0;
-
 }
 
 .contact {
@@ -59,8 +58,7 @@ body {
   position: fixed;
   padding: 0 15.625%;
   width: 100%;
-  max-width: 1920px;
-  height: 52px;
+  height: 2.708vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,18 +78,18 @@ body {
 }
 
 .contact__link {
-  margin: 0 24px 0 8px;
+  margin: 0 1.250vw 0 0.417vw;
   color: #fff;
-  font: 600 0.73vw/120% "nunitosans", sans-serif;
+  font: 600 .73vw/120% "nunitosans", sans-serif;
 }
 
 .contact__link {
   color: #4F8FF0;
-  font: 700 0.73vw/150% "nunitosans", sans-serif;
+  font: 700 .73vw/150% "nunitosans", sans-serif;
 }
 /*///////////////////////////////////*/
 .header {
-  padding-top: 52px;
+  padding-top: 2.708vw;
 }
 
 .header__wrapper {
@@ -100,7 +98,7 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 0 15.63vw;
-  height: 112px;
+  height: 5.833vw;
   @media(max-width:834px) {
     justify-content: space-between;
   }
@@ -127,7 +125,7 @@ body {
 
 .header__list {
   color: #fff;
-  font: 700 0.94vw/120% "nunitosans", sans-serif;
+  font: 700 .94vw/120% "nunitosans", sans-serif;
   display: flex;
   flex-direction: row;
   column-gap: 1.67vw;
@@ -162,11 +160,12 @@ body {
 /*//////////////*/
 .preview, .header {
   background-image: linear-gradient(rgba(34, 34, 34, 0.64), rgba(34, 34, 34, 0.64)), url("../img/header__background.jpg");
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
+  background-size: cover;
 }
 
 .preview {
-  height: 708px;
+  height: 100%;
 }
 
 .preview__wrapper {
@@ -202,7 +201,7 @@ body {
 
 .preview__link {
   margin-top: 2.5vw;
-  padding-bottom: 0.83vw;
+  padding-bottom: .83vw;
 }
 
 .preview__control {
@@ -263,7 +262,7 @@ body {
 }
 
 .services__title {
-  margin-bottom: 0.52vw;
+  margin-bottom: .52vw;
   margin-top: 4.17vw;
 }
 
@@ -300,11 +299,11 @@ body {
   }
   h4 {
     font: 800 1.04vw/150% "nunitosans", sans-serif;
-    margin-top: 0.78vw;
-    margin-bottom: 0.52vw;
+    margin-top: .78vw;
+    margin-bottom: .52vw;
   }
   p {
-    font: 400 0.73vw/120% "nunitosans", sans-serif;
+    font: 400 .73vw/120% "nunitosans", sans-serif;
     text-align: center;
     width: 18.75vw;
   }
@@ -321,7 +320,7 @@ body {
       display: inline-block;
       width: 19.38vw;
       position: relative;
-      border: 0.1vw solid #fff;
+      border: .1vw solid #fff;
       transition: all .3s ease;
       margin: 1.04vw;
     }
@@ -338,21 +337,20 @@ body {
       transform-origin: 50% 50%;
     }
     .services__box:before {
-      width: calc(100% + 0.21vw);
+      width: calc(100% + .21vw);
       height: 70%;
-      transition: height 0.6s;
+      transition: height .6s;
     }
     .services__box:after {
-      height: calc(100% + 0.21vw);
+      height: calc(100% + .21vw);
       width: 85%;
-      transition: width 0.6s;
+      transition: width .6s;
     }
     .services__textbox  {
       z-index: 2;
       position: relative;
       text-align: center;
     }
-
   }
 }
 
@@ -367,12 +365,11 @@ body {
   justify-content: center;
   padding: 4.17vw  0;
   height: 32.5vw;
-  color: #222222;
+  color: #222;
   img {
     height: 18.7vw;
     box-shadow: 0.21vw 0.21vw 0.63vw 0.1vw rgba(33, 33, 33, 0.25);
   }
-  
 }
 
 .information__case {
@@ -419,7 +416,7 @@ body {
 .information__links-sertificat {
   width: 8.39vw;
   background: #E6E6E6;
-  border: 0.1vw solid #E6E6E6;
+  border: .1vw solid #E6E6E6;
   color: #222222;
 }
 /*///////////////////////////////////*/
@@ -436,7 +433,7 @@ body {
 }
 
 .jurist__subtitle {
-  font: 400 0.83vw/120% "nunitosans", sans-serif;
+  font: 400 .83vw/120% "nunitosans", sans-serif;
   margin-bottom: 2.5vw;
   width: 47.92vw;
   text-align: center;
@@ -547,14 +544,10 @@ body {
 }
 /*///////////////////////////////////*/
 .reviews {
-  height: 30.63vw;
-  color: #222222;
-  background: url("../img/reviews__background.jpg");
+  color: #222;
+  background-image: url("../img/reviews__background.jpg");
   background-repeat: no-repeat;
-  @media screen {
-    background: url("../img/reviews__background.jpg");
-    height: 40.63vw;
-  }
+  background-size:contain;
 }
 
 .reviews__container {
@@ -757,7 +750,7 @@ justify-content: center;
 
 .news__img-city {
   background: url("../img/news__city.jpg");
-  background-size: contain;
+  background-size: cover;
 }
 
 .news__img-paris {
